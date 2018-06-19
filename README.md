@@ -111,8 +111,8 @@ Task<double> GetCalculate(Models.OperationTypeEnum operation, double x, double y
 
 ```csharp
 var operation = Models.OperationTypeEnumHelper.ParseString("ADD");
-double x = 101.199259728286;
-double y = 101.199259728286;
+double x = 191.522357599587;
+double y = 191.522357599587;
 
 double result = await simpleCalculator.GetCalculate(operation, x, y);
 
