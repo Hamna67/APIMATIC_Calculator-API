@@ -95,7 +95,7 @@ SimpleCalculatorController simpleCalculator = client.SimpleCalculator;
 
 
 ```csharp
-Task<double> GetCalculate(Models.OperationTypeEnum operation, double x)
+Task<double> GetCalculate(Models.OperationTypeEnum operation, double x, double y)
 ```
 
 #### Parameters
@@ -104,15 +104,17 @@ Task<double> GetCalculate(Models.OperationTypeEnum operation, double x)
 |-----------|------|-------------|
 | operation |  ``` Required ```  | TODO: Add a parameter description |
 | x |  ``` Required ```  | TODO: Add a parameter description |
+| y |  ``` Required ```  | TODO: Add a parameter description |
 
 
 #### Example Usage
 
 ```csharp
 var operation = Models.OperationTypeEnumHelper.ParseString("ADD");
-double x = 73.4387196663016;
+double x = 101.199259728286;
+double y = 101.199259728286;
 
-double result = await simpleCalculator.GetCalculate(operation, x);
+double result = await simpleCalculator.GetCalculate(operation, x, y);
 
 ```
 
