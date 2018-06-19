@@ -95,7 +95,7 @@ OpenWeatherMapController openWeatherMap = client.OpenWeatherMap;
 
 
 ```csharp
-Task<Models.WeatherResponseType> GetWeather(Models.OperationTypeEnum operation, int lat, int lon)
+Task<Models.WeatherResponseType> GetWeather(Models.OperationTypeEnum operation, double lat, double lon)
 ```
 
 #### Parameters
@@ -111,8 +111,8 @@ Task<Models.WeatherResponseType> GetWeather(Models.OperationTypeEnum operation, 
 
 ```csharp
 var operation = Models.OperationTypeEnumHelper.ParseString("weather");
-int lat = 213;
-int lon = 213;
+double lat = 99.6127572211496;
+double lon = 99.6127572211496;
 
 Models.WeatherResponseType result = await openWeatherMap.GetWeather(operation, lat, lon);
 
